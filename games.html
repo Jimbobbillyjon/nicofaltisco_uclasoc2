@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html>
   <style>
-  h1{
+  body{
+    background:url("https://vignette.wikia.nocookie.net/life-is-strange/images/5/5f/Life-is-strange-.jpg/revision/latest?cb=20151206014755");
+    background-size: cover;
+    color: white;
     text-align: center;
   }
-  body{
-    background-color: skyblue;
-  }
-  </style>
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    }
+    li{
+      float: left;
+      }
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+           }
 
-  <head>
-    <title>Games</title>
-  </head>
+      li a:hover {
+        background-color: grey;
+                 }
 
-  <body>
+      .active {
+        background-color:black;
+              }
+</style>
+
+<head>
+  <title>Games</title>
+</head>
+
+<body>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="animals.html">Animals</a></li>
+      <li><a href="birthday.html">Birthday</a></li>
+      <li><a class="active" href="games.html">Games</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="things looking forward to.html">Things I'm looking forward to</a></li>
+    </ul>
+
     <h1>Video Games</h1>
-    <ol>
-    <li><h3>The Last of Us</h3></li>
-    <li><h3>Life is Strange</h3></li>
-    <li><h3>RDR</h3></li>
-    </ol>
-  </body>
+    <h2>The Last of Us</h2>
+    <h2>Life is Strange</h2>
+    <h2>RDR</h2>
+</body>
 
 </html>
