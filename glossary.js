@@ -9,10 +9,11 @@ var glossary = [{terminal_commands: 'A terminal is your interface to the underly
 {key_value_pairs: "{name: 'Jen', favAnimal: 'llama'} a set of two linked data items: a key (name)and its value ('Jen') Key-value pairs are frequently used in programming to store data."},
 {javascript: 'an object-oriented computer programming'}
 {persona: 'a client or targeted audience for a website'}
-
-
-
-
+{wireframes:}
+{Tests:}
+{Gists:}
+{Markdown:}
+{}
 
 
 ]
