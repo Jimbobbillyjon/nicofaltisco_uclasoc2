@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Images</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </head>
+
+  <body>
+    <div id="navbar"></div>
+
+    <h1>Click on the photo to see a random image</h1>
+    <img src="https://nerdist.com/wp-content/uploads/2017/05/Ongo-970x545.jpg" alt='danny devito' id="changeablePic" onClick="change();" width="960px" height="540x">
+
+    <script type="text/javascript">
+
+$(function(){
+  $("navbar").load("https://code.jquery.com/jquery-1.10.2.js");
+});
+      var animalPics = ["https://nerdist.com/wp-content/uploads/2017/05/Ongo-970x545.jpg",
+      "https://img.maximummedia.ie/joe_co_uk/eyJkYXRhIjoie1widXJsXCI6XCJodHRwOlxcXC9cXFwvbWVkaWEtam9lY291ay5tYXhpbXVtbWVkaWEuaWUuczMuYW1hem9uYXdzLmNvbVxcXC93cC1jb250ZW50XFxcL3VwbG9hZHNcXFwvMjAxOFxcXC8wNlxcXC8wNTA5MDYwNVxcXC9JQVNJUC1FcDgwMi1GcmFua190YWtlc19kb3duX2RvZ19wYWludGluZ19zYy04MDItNV8wMDI4X0ZVTEwtMTAyNHg1NDYuanBnXCIsXCJ3aWR0aFwiOjc2NyxcImhlaWdodFwiOjQzMSxcImRlZmF1bHRcIjpcImh0dHBzOlxcXC9cXFwvd3d3LmpvZS5jby51a1xcXC9hc3NldHNcXFwvaW1hZ2VzXFxcL2pvZWNvdWtcXFwvbm8taW1hZ2UucG5nP3Y9NVwifSIsImhhc2giOiI0NmUwMTEzMTFiYzYyYTUwZDRhZTU0MzFlMjE4NTJjMmE2ODQzNTM3In0=/iasip-ep802-frank-takes-down-dog-painting-sc-802-5-0028-full-1024x546.jpg",
+      "http://78.media.tumblr.com/a602b35bcfa627236d2825dda64af4f0/tumblr_ngspk8Qf2C1qasrrdo3_1280.jpg",
+      "https://pbs.twimg.com/media/DO1eGpTXkAAhmej.jpg",
+      "https://i.ytimg.com/vi/2kWUbrx4EMw/maxresdefault.jpg",
+      "https://i.redd.it/dozac5mvcmrz.jpg",
+      "https://i.redd.it/7o2u4kc1iq9z.jpg",
+      "http://i.imgur.com/lCuTwpY.png",
+      "http://cdn.pastemagazine.com/www/articles/trolltoll.jpg",
+      "https://i.kym-cdn.com/photos/images/newsfeed/001/057/817/e6a.png"];
+
+      function change() {
+        var image = document.getElementById('changeablePic');
+        var randomInt = getRandomInt(0, 10)
+        image.src = animalPics[randomInt]
+      }
+
+      function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+        //The maximum is exclusive and the minimum is inclusive
+      }
+
+    </script>
+  </body>
+</html>
